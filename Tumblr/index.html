@@ -123,6 +123,11 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MGGZ74N');</script>
         <!-- End Google Tag Manager -->
+        <script>
+　　　　 dataLayer.push({'pageID':'footer-icon'});
+        dataLayer.push({'pageID2':'header-link'});
+        dataLayer.push({'pageID3':'外部ページ遷移全般'});
+　　　　　</script>
         <!-- Google Search Console -->
         <meta name="google-site-verification" content="ugQtBq9UGJypRvvIyhWL_2MR16j2S6HnGfSHxgouVPk" />
         <!-- End Google Search console -->
@@ -457,19 +462,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             <ul class="social-links clearfix">
     			    {block:IfURLWebsite}
-    					<li><a href="{text:URL Website}" target="_blank" title="Website"><i class="icon-screen"></i></a></li>
+    					<li><a href="{text:URL Website}" target="_blank" id="referral" title="Website"><i class="icon-screen"></i></a></li>
     				{/block:IfURLWebsite}
     				{block:IfURLTwitter}
-    					<li><a href="{text:URL Twitter}" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+    					<li><a href="{text:URL Twitter}" target="_blank" id="referral" title="Twitter"><i class="icon-twitter"></i></a></li>
     				{/block:IfURLTwitter}
     				{block:IfURLFacebook}
-    					<li><a href="{text:URL Facebook}" target="_blank" title="Facebook"><i class="icon-facebook"></i></a></li>
+    					<li><a href="{text:URL Facebook}" target="_blank" id="referral" title="Facebook"><i class="icon-facebook"></i></a></li>
     				{/block:IfURLFacebook}
     				{block:IfURLGooglePlus}
     					<li><a href="{text:URL Google Plus}" target="_blank" title="Google"><i class="icon-googleplus"></i></a></li>
     				{/block:IfURLGooglePlus}
     				{block:IfURLInstagram}
-    					<li><a href="{text:URL Instagram}" target="_blank" title="Instagram"><i class="icon-instagram"></i></a></li>
+    					<li><a href="{text:URL Instagram}" target="_blank" id="referral" title="Instagram"><i class="icon-instagram"></i></a></li>
     				{/block:IfURLInstagram}
     				{block:IfURLFlickr}
     					<li><a href="{text:URL Flickr}" target="_blank" title="Flickr"><i class="icon-flickr"></i></a></li>
@@ -490,7 +495,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     					<li><a href="{text:URL Behance}" target="_blank" title="Behance"><i class="icon-behance"></i></a></li>
     				{/block:IfURLBehance}
     				{block:IfEmailAddress}
-    					<li><a href="mailto:{text:Email Address}" target="_blank" title="Email"><i class="icon-envelope"></i></a></li>
+    					<li><a href="mailto:{text:Email Address}" target="_blank" id="referral" title="Email"><i class="icon-envelope"></i></a></li>
     				{/block:IfEmailAddress}
     			</ul>
         </footer>
